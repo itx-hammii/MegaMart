@@ -813,9 +813,7 @@
           <div class="footer-hr">
             <hr />
           </div>
-          <h6 class="copyright">
-            © 2022 All rights reserved. Reliance Retail Ltd.
-          </h6>
+          <h6 class="copyright">© 2022 All rights reserved.</h6>
         </footer>
       </div>
     </div>
@@ -836,6 +834,10 @@
 
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 3,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: true,
+          },
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
